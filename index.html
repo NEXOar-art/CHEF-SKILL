@@ -17,10 +17,7 @@
 <style>
 :root{--primary:#e85d1f;--accent:#9aa7b4;--bg:#fafaf7;--card:#ffffff;--card2:#f6f3ee;--line:#ebe6dc;--text:#2b2620;--muted:#8a8175;--ok:#2d9a5f;--warn:#e8a31f;--bad:#d64545;--glow:0 0 22px rgba(232,93,31,.22);--hero:#fff8f2}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Rajdhani','Segoe UI',sans-serif;color:var(--text);min-height:100vh;background:
- radial-gradient(900px 480px at 90% -10%,color-mix(in srgb,var(--primary) 10%,transparent),transparent 60%),
- radial-gradient(700px 380px at -10% 30%,rgba(232,163,31,.08),transparent 55%),
- var(--bg)}
+body{font-family:'Rajdhani','Segoe UI',sans-serif;color:var(--text);min-height:100vh;background:radial-gradient(900px 480px at 90% -10%,color-mix(in srgb,var(--primary) 10%,transparent),transparent 60%),radial-gradient(700px 380px at -10% 30%,rgba(232,163,31,.08),transparent 55%),var(--bg)}
 ::-webkit-scrollbar{width:9px;height:9px}::-webkit-scrollbar-thumb{background:#d9cfbf;border-radius:6px}::-webkit-scrollbar-track{background:#f1ece1}
 header{position:sticky;top:0;z-index:50;display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:12px 22px;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);box-shadow:0 4px 18px rgba(60,40,20,.08)}
 .logo{width:62px;height:62px;filter:drop-shadow(0 4px 10px rgba(232,93,31,.28))}
@@ -81,11 +78,7 @@ main{padding:18px 22px 60px;max-width:1560px;margin:auto;display:flex;flex-direc
 .ch-card{grid-column:span 6;display:flex;flex-direction:column;min-height:320px}
 .ch-card.w7{grid-column:span 7}.ch-card.w5{grid-column:span 5}
 .ch-body{padding:10px 14px 14px;flex:1;position:relative;min-height:260px}
-.ch-card::after{content:'';position:absolute;inset:8px;pointer-events:none;opacity:0;transition:opacity .35s;background:
- linear-gradient(var(--primary),var(--primary)) left top/16px 2px,linear-gradient(var(--primary),var(--primary)) left top/2px 16px,
- linear-gradient(var(--primary),var(--primary)) right top/16px 2px,linear-gradient(var(--primary),var(--primary)) right top/2px 16px,
- linear-gradient(var(--primary),var(--primary)) left bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) left bottom/2px 16px,
- linear-gradient(var(--primary),var(--primary)) right bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) right bottom/2px 16px;background-repeat:no-repeat}
+.ch-card::after{content:'';position:absolute;inset:8px;pointer-events:none;opacity:0;transition:opacity .35s;background:linear-gradient(var(--primary),var(--primary)) left top/16px 2px,linear-gradient(var(--primary),var(--primary)) left top/2px 16px,linear-gradient(var(--primary),var(--primary)) right top/16px 2px,linear-gradient(var(--primary),var(--primary)) right top/2px 16px,linear-gradient(var(--primary),var(--primary)) left bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) left bottom/2px 16px,linear-gradient(var(--primary),var(--primary)) right bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) right bottom/2px 16px;background-repeat:no-repeat}
 .ch-card:hover::after{opacity:.85}
 .ch-card .ch-body canvas{transition:filter .3s}
 .ch-card:hover .ch-body canvas{filter:drop-shadow(0 0 10px color-mix(in srgb,var(--primary) 22%,transparent))}
@@ -95,16 +88,9 @@ main{padding:18px 22px 60px;max-width:1560px;margin:auto;display:flex;flex-direc
 .map-wrap{position:relative}
 #mapDiv{height:380px;background:#e8e2d4;border-radius:0 0 14px 14px;box-shadow:inset 0 0 30px rgba(0,0,0,.15)}
 #mapDiv .leaflet-container{background:#e8e2d4;font-family:'Rajdhani',sans-serif}
-#mapCard::after{content:'';position:absolute;inset:8px;pointer-events:none;opacity:0;transition:opacity .35s;z-index:6;background:
- linear-gradient(var(--primary),var(--primary)) left top/16px 2px,linear-gradient(var(--primary),var(--primary)) left top/2px 16px,
- linear-gradient(var(--primary),var(--primary)) right top/16px 2px,linear-gradient(var(--primary),var(--primary)) right top/2px 16px,
- linear-gradient(var(--primary),var(--primary)) left bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) left bottom/2px 16px,
- linear-gradient(var(--primary),var(--primary)) right bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) right bottom/2px 16px;background-repeat:no-repeat}
+#mapCard::after{content:'';position:absolute;inset:8px;pointer-events:none;opacity:0;transition:opacity .35s;z-index:6;background:linear-gradient(var(--primary),var(--primary)) left top/16px 2px,linear-gradient(var(--primary),var(--primary)) left top/2px 16px,linear-gradient(var(--primary),var(--primary)) right top/16px 2px,linear-gradient(var(--primary),var(--primary)) right top/2px 16px,linear-gradient(var(--primary),var(--primary)) left bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) left bottom/2px 16px,linear-gradient(var(--primary),var(--primary)) right bottom/16px 2px,linear-gradient(var(--primary),var(--primary)) right bottom/2px 16px;background-repeat:no-repeat}
 #mapCard:hover::after{opacity:.85}
-.map-overlay{position:absolute;top:12px;left:12px;z-index:800;pointer-events:none;display:flex;gap:8px;align-items:center;
- background:linear-gradient(90deg,rgba(255,255,255,.95),rgba(255,255,255,.7));border:1px solid color-mix(in srgb,var(--primary) 55%,transparent);
- border-radius:8px;padding:6px 12px;font-family:'Orbitron';font-size:.6rem;letter-spacing:2px;color:var(--primary);text-transform:uppercase;
- box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.map-overlay{position:absolute;top:12px;left:12px;z-index:800;pointer-events:none;display:flex;gap:8px;align-items:center;background:linear-gradient(90deg,rgba(255,255,255,.95),rgba(255,255,255,.7));border:1px solid color-mix(in srgb,var(--primary) 55%,transparent);border-radius:8px;padding:6px 12px;font-family:'Orbitron';font-size:.6rem;letter-spacing:2px;color:var(--primary);text-transform:uppercase;box-shadow:0 6px 18px rgba(0,0,0,.12)}
 .map-overlay i{width:8px;height:8px;border-radius:50%;background:var(--primary);box-shadow:0 0 10px var(--primary);animation:blink 1.6s infinite}
 @keyframes blink{50%{opacity:.35}}
 .leaflet-control-zoom a{background:#fff!important;color:var(--text)!important;border:1px solid #d9cfbf!important;transition:.2s}
@@ -232,10 +218,8 @@ footer{padding:18px;text-align:center;color:var(--muted);font-size:.72rem;letter
       <defs>
         <linearGradient id="lgM" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff8f2"/><stop offset=".45" stop-color="#f5a66e"/><stop offset=".55" stop-color="#e85d1f"/><stop offset="1" stop-color="#ffdfc2"/></linearGradient>
         <radialGradient id="lgC" cx=".5" cy=".4" r=".85"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#f1e7d4"/></radialGradient>
-        <radialGradient id="lgChef" cx=".5" cy=".3" r=".7"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e2d4"/></radialGradient>
       </defs>
       <circle cx="60" cy="60" r="57" fill="url(#lgC)" stroke="url(#lgM)" stroke-width="5"/>
-      <!-- Gorro de chef estilizado -->
       <ellipse cx="60" cy="38" rx="22" ry="16" fill="#ffffff" stroke="#e85d1f" stroke-width="2"/>
       <circle cx="48" cy="28" r="9" fill="#ffffff" stroke="#e85d1f" stroke-width="1.8"/>
       <circle cx="60" cy="22" r="11" fill="#ffffff" stroke="#e85d1f" stroke-width="1.8"/>
@@ -263,9 +247,9 @@ footer{padding:18px;text-align:center;color:var(--muted);font-size:.72rem;letter
     <div class="conn-body">
       <div class="conn-row">
         <span class="conn-ico" title="Google Sheets">📡</span>
-        <input class="inp" id="sheetsUrl" placeholder="Pega aquí el enlace compartido de Google Sheets (Cualquiera con el enlace → Lector)…">
+        <input class="inp" id="sheetsUrl" placeholder="Pega aquí el enlace compartido de Google Sheets…">
         <button class="btn primary" id="btnSheets"><span>🔌 Conectar Sheets</span></button>
-        <button class="btn" id="btnRefresh" title="Actualizar / reconectar la fuente actual"><span><i class="spin-ico">🔄</i> Actualizar</span></button>
+        <button class="btn" id="btnRefresh" title="Actualizar"><span><i class="spin-ico">🔄</i> Actualizar</span></button>
       </div>
       <div class="conn-row">
         <span class="conn-ico" title="Archivos locales">📂</span>
@@ -284,7 +268,7 @@ footer{padding:18px;text-align:center;color:var(--muted);font-size:.72rem;letter
         <span id="badgeB" class="src-badge" hidden></span>
         <button class="btn" id="btnRemoveB" hidden><span>✖ Quitar B</span></button>
       </div>
-      <div class="note">🍽️ Carga tu dataset <b>Principal</b> y uno <b>Secundario</b>: cada uno se analiza por separado con la barra de vistas y el botón <b>🆚 Comparativo</b> los enfrenta en un reporte profesional. 🗺️ El mapa marca las sucursales/ciudades y reacciona a todos los filtros. 📄 El <b>Reporte PDF</b> captura la vista filtrada actual en 2 páginas. 🔒 Procesamiento 100% local.</div>
+      <div class="note">🍽️ Carga tu dataset <b>Principal</b> y uno <b>Secundario</b>. El <b>Reporte PDF</b> captura la vista filtrada actual. 🔒 Procesamiento 100% local.</div>
     </div>
   </section>
 
@@ -311,7 +295,7 @@ footer{padding:18px;text-align:center;color:var(--muted);font-size:.72rem;letter
 
   <section id="timeSection" hidden>
     <div class="card">
-      <div class="card-h"><h3>📅 Análisis temporal de ventas</h3><span class="spacer"></span>
+      <div class="card-h"><h3>📅 Ventas Diarias, Semanales y Mensuales (Filtrable)</h3><span class="spacer"></span>
         <div class="seg" id="granSeg">
           <button class="seg-btn gbtn active" data-g="day">Día</button>
           <button class="seg-btn gbtn" data-g="week">Semana</button>
@@ -414,7 +398,7 @@ footer{padding:18px;text-align:center;color:var(--muted);font-size:.72rem;letter
 <script>
 'use strict';
 const $=s=>document.querySelector(s);
-const state={rows:[],columns:[],filters:{},search:'',sort:{key:null,dir:1},page:1,pageSize:10,selected:new Set(),charts:{},chartTypes:{},chartTitles:{},cmpCharts:{},source:{type:'demo',label:'Demo'},lastSheetsUrl:null,updatedAt:null,slot:'A',view:'A',showCompare:false,A:null,B:null,leafletMap:null,lastKpis:[],lastInsights:[],lastDecisions:[]};
+const state={rows:[],columns:[],filters:{},search:'',sort:{key:null,dir:1},page:1,pageSize:10,selected:new Set(),charts:{},chartTypes:{},chartGrans:{},chartTitles:{},cmpCharts:{},source:{type:'demo',label:'Demo'},lastSheetsUrl:null,updatedAt:null,slot:'A',view:'A',showCompare:false,A:null,B:null,leafletMap:null,lastKpis:[],lastInsights:[],lastDecisions:[]};
 
 /* ================= Utils ================= */
 const Utils={
@@ -589,7 +573,7 @@ function processDataset(data){
 }
 function activateDS(ds,reset){
   state.rows=ds.rows;state.columns=ds.columns;state.source=ds.source;state.updatedAt=ds.updatedAt;
-  if(reset||!ds.ui){state.filters={};state.search='';state.page=1;state.selected=new Set();state.sort={key:null,dir:1};state.chartTypes={};}
+  if(reset||!ds.ui){state.filters={};state.search='';state.page=1;state.selected=new Set();state.sort={key:null,dir:1};state.chartTypes={};state.chartGrans={};}
   else{state.filters=ds.ui.filters||{};state.search=ds.ui.search||'';state.page=ds.ui.page||1;state.selected=ds.ui.selected||new Set();state.sort=ds.ui.sort||{key:null,dir:1};state.chartTypes=ds.ui.chartTypes||{};}
   $('#searchInp').value=state.search;
   FilterEngine.buildUI();updateStatus();refresh();
@@ -757,7 +741,6 @@ function renderKPIs(rows){
         meas=pickMeasure(),statusCol=findStatusCol(state.columns),saleCol=findSaleCol(state.columns),
         soldQty=findSoldQty(state.columns);
   
-  // Columnas específicas gastronómicas
   const canalCol=state.columns.find(c=>/canal|channel|delivery|take away|takeaway|sal[oó]n|take.away/i.test(c.name));
   const satisfCol=state.columns.find(c=>/satisfacci[oó]n|rating|puntuaci[oó]n|score|calificaci[oó]n/i.test(c.name));
   const esperaCol=state.columns.find(c=>/t(._)?espera|tiempo.?(de )?espera|wait.?time/i.test(c.name));
@@ -785,11 +768,19 @@ function renderKPIs(rows){
     push(198,'Facturación total',Utils.fmtCur(fact,saleCol.sym),statusCol?'Completados · '+saleCol.name:saleCol.name);
     push(197,'Ticket promedio',Utils.fmtCur(fact/Math.max(1,comp.length),saleCol.sym),Utils.fmtInt(comp.length)+' pedidos');
     if(date){
-      const per=g=>{const s=new Set();comp.forEach(r=>{const d=r[date.key];if(d)s.add(TimeEngine.bucket(d,g));});return s.size;};
-      const nd=per('day'),nw=per('week'),nm=per('month'),ny=per('year');
-      if(nd)push(196,'Venta diaria prom.',Utils.fmtCur(fact/nd,saleCol.sym),'facturación / día activo');
-      if(nw)push(195,'Venta semanal prom.',Utils.fmtCur(fact/nw,saleCol.sym),'facturación / semana');
-      if(nm)push(194,'Venta mensual prom.',Utils.fmtCur(fact/nm,saleCol.sym),'facturación / mes');
+      const per = g => {
+        const s = new Set();
+        comp.forEach(r => {
+          const d = r[date.key];
+          if(d) s.add(TimeEngine.bucket(d, g));
+        });
+        return s.size;
+      };
+      const nd = per('day'), nw = per('week'), nm = per('month');
+      // CÁLCULO CORREGIDO: Venta diaria/semanal/mensual como promedio por período activo (más representativo para caja)
+      if(nd > 0) push(196, 'Venta diaria', Utils.fmtCur(fact / nd, saleCol.sym), 'promedio por día activo');
+      if(nw > 0) push(195, 'Venta semanal', Utils.fmtCur(fact / nw, saleCol.sym), 'promedio por semana');
+      if(nm > 0) push(194, 'Venta mensual', Utils.fmtCur(fact / nm, saleCol.sym), 'promedio por mes');
     }
   }
   if(lab&&meas){const g=groupAgg(rows,lab.key,meas.key,'sum',10);
@@ -813,7 +804,6 @@ function renderKPIs(rows){
   if(satisfCol&&satisfCol.stats.count)push(181,'Satisfacción promedio','⭐ '+Utils.fmtNum(satisfCol.stats.mean),'escala 1-5');
   if(esperaCol&&esperaCol.stats.count)push(180,'T. espera promedio',Utils.fmtNum(esperaCol.stats.mean)+' min','pedido a entrega');
   if(date&&cliCol){
-    // Fidelización simple: clientes con >1 pedido en <30 días
     const cliMap=new Map();
     for(const r of rows){const k=r[cliCol2?.key||cliCol.key];if(!k||!r[date.key])continue;
       if(!cliMap.has(k))cliMap.set(k,[]);cliMap.get(k).push(r[date.key]);}
@@ -876,7 +866,6 @@ function renderKPIs(rows){
   C.sort((a,b)=>b.sc-a.sc);
   state.lastKpis=C.filter(k=>k.cat==null);
   
-  // Render con headers de categoría
   const grouped=[];let curCat=null;
   C.forEach(k=>{
     if(k.cat){curCat=k.cat;grouped.push({type:'header',cat:k.cat,label:k.l});}
@@ -922,6 +911,22 @@ function buildChartDefs(){
   if(lab&&meas&&lab!==cat)defs.push({id:'cD',w:'w5',title:`🏆 Top 10 ${lab.name} por ${meas.name}`,dim:lab.key,fk:lab.key,meas:meas.key,mode:'sum',top:10,types:['bar'],hz:true});
   if(lab&&(soldQty||saleCol))defs.push({id:'cE',w:'w7',title:'🍕 Top 10 platos más vendidos',dim:lab.key,fk:lab.key,meas:(soldQty||saleCol).key,mode:'sum',top:10,types:['bar'],hz:true,comp:stKey});
   if(canalCol&&saleCol)defs.push({id:'cF',w:'w5',title:`📦 Ingresos por canal`,dim:canalCol.key,fk:canalCol.key,meas:saleCol.key,mode:'sum',top:8,types:['doughnut','bar']});
+  
+  // NUEVO GRÁFICO: Ventas por Período (Diario/Semanal/Mensual) con filtro
+  if(date && saleCol) {
+    defs.push({
+      id: 'cTimeGrid',
+      w: 'w7',
+      title: '📈 Ventas: Diarias / Semanales / Mensuales',
+      dateKey: date.key,
+      fk: date.key + '__timegrid',
+      meas: saleCol.key,
+      mode: 'sum',
+      types: ['bar', 'line'],
+      granular: true
+    });
+  }
+  
   if(!defs.length&&meas)defs.push({id:'cA',w:'w7',title:`Distribución de ${meas.name}`,hist:meas.key,fk:meas.key+'__bin',types:['bar']});
   defs.forEach(d=>d.type=state.chartTypes[d.id]||d.types[0]);
   return defs;
@@ -932,7 +937,10 @@ function chartData(def,rows){
     const bins=Array.from({length:k},(_,i)=>({lo:mn+i*w,hi:mn+(i+1)*w,v:0}));
     vs.forEach(v=>{bins[Math.min(k-1,Math.floor((v-mn)/w))].v++;});
     return{labels:bins.map(b=>Utils.fmtNum(b.lo)+'–'+Utils.fmtNum(b.hi)),values:bins.map(b=>b.v),bins};}
-  if(def.dateKey){const g=dateGran(rows,def.dateKey);const m=new Map();
+  if(def.dateKey){
+    // Si es granular, usa la granularidad seleccionada o 'month' por defecto
+    const g = def.granular ? (state.chartGrans?.[def.id] || 'month') : dateGran(rows, def.dateKey);
+    const m=new Map();
     for(const r of rows){const d=r[def.dateKey];if(!d)continue;const b=bucketOf(d,g);const e=m.get(b)||{v:0,c:0};e.c++;
       if(def.mode==='sum'){const v=valNum(r[def.meas]);if(v)e.v+=v;}m.set(b,e);}
     const keys=[...m.keys()].sort();
@@ -949,10 +957,26 @@ function renderCharts(){
   if(!defs.length){grid.innerHTML='<div class="card ch-card" style="grid-column:span 12"><div class="card-h"><h3>Sin datos suficientes para graficar</h3></div></div>';return;}
   defs.forEach((def,idx)=>{
     const card=document.createElement('div');card.className=`card ch-card ${def.w||''}`;card.style.animationDelay=(idx*70)+'ms';
+    
+    // Selector de granularidad para el nuevo gráfico
+    const granSel = def.granular ? `<select class="sel gran-select" data-id="${def.id}" style="padding:4px 8px;font-size:.72rem;margin-right:8px">
+        <option value="day" ${state.chartGrans?.[def.id]==='day'?'selected':''}>Diario</option>
+        <option value="week" ${state.chartGrans?.[def.id]==='week'?'selected':''}>Semanal</option>
+        <option value="month" ${(!state.chartGrans?.[def.id] || state.chartGrans?.[def.id]==='month')?'selected':''}>Mensual</option>
+    </select>` : '';
+    
     const typeSel=def.types.length>1?`<select class="sel chtype" data-id="${def.id}" style="padding:4px 8px;font-size:.72rem">${def.types.map(t=>`<option ${t===def.type?'selected':''}>${t}</option>`).join('')}</select>`:'';
-    card.innerHTML=`<div class="card-h"><h3>${Utils.esc(def.title)}</h3><span class="spacer"></span>${typeSel}</div><div class="ch-body"><canvas id="cv_${def.id}"></canvas></div>`;
+    card.innerHTML=`<div class="card-h"><h3>${Utils.esc(def.title)}</h3><span class="spacer"></span>${granSel}${typeSel}</div><div class="ch-body"><canvas id="cv_${def.id}"></canvas></div>`;
     grid.appendChild(card);
+    
+    // Event listeners para los selectores
     card.querySelector('.chtype')?.addEventListener('change',e=>{state.chartTypes[def.id]=e.target.value;renderCharts();});
+    card.querySelector('.gran-select')?.addEventListener('change',e=>{
+        state.chartGrans = state.chartGrans || {};
+        state.chartGrans[def.id] = e.target.value;
+        renderCharts();
+    });
+    
     let rows=getFiltered(def.fk);
     if(def.comp)rows=rows.filter(r=>isCompleted(r[def.comp]));
     const D=chartData(def,rows);
@@ -1039,7 +1063,7 @@ const TimeEngine={gran:'month',period:null,charts:{},
         data:{labels:keys.map(k=>this.label(k,this.gran)),datasets:[{label:saleCol?'Ventas':'Σ',
           data:keys.map(k=>+(m.get(k).v).toFixed(2)),
           backgroundColor:keys.map(k=>k===this.period?Utils.hexRgba(pri,.95):Utils.hexRgba(pri,.4)),borderRadius:5,
-          hoverBackgroundColor:Utils.hexRgba(pri,1),hoverBorderColor:primary,hoverBorderWidth:1.5}]},
+          hoverBackgroundColor:Utils.hexRgba(pri,1),hoverBorderColor:pri,hoverBorderWidth:1.5}]},
         options:{maintainAspectRatio:false,responsive:true,onHover:hoverCursor,animation:barDelay,
           plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+Utils.fmtNum(c.parsed.y)}}},
           scales:CLEAN_SCALES,
@@ -1047,7 +1071,7 @@ const TimeEngine={gran:'month',period:null,charts:{},
       if(lab){const g=groupAgg(pr,lab.key,(soldQty||meas)?.key,soldQty||meas?'sum':'count',5);
         this.charts.top=new Chart($('#cvTopPeriod'),{type:'bar',
           data:{labels:g.map(x=>Utils.trunc(x.label,16)),datasets:[{label:'Top 5',data:g.map(x=>+x.value.toFixed(2)),
-            backgroundColor:Utils.hexRgba(pri,.75),borderRadius:5,hoverBackgroundColor:Utils.hexRgba(pri,1),hoverBorderColor:primary,hoverBorderWidth:1.5}]},
+            backgroundColor:Utils.hexRgba(pri,.75),borderRadius:5,hoverBackgroundColor:Utils.hexRgba(pri,1),hoverBorderColor:pri,hoverBorderWidth:1.5}]},
           options:{indexAxis:'y',maintainAspectRatio:false,responsive:true,onHover:hoverCursor,animation:barDelay,
             plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>' '+Utils.fmtNum(c.parsed.x)}}},
             scales:CLEAN_SCALES}});}
@@ -1423,9 +1447,20 @@ function renderDecisions(rows){
 }
 
 function refresh(){
-  try{const full=getFiltered();
-    renderKPIs(full);renderCharts();TimeEngine.render();renderGeo();TableEngine.render(full);renderInsights(full);renderDecisions(full);FilterEngine.renderChips();
-  }catch(e){console.error(e);Utils.toast('⚠️ Error procesando: '+Utils.esc(e.message),'err');}
+  try{
+    const full=getFiltered();
+    renderKPIs(full);
+    renderCharts();
+    TimeEngine.render();
+    renderGeo();
+    TableEngine.render(full);
+    renderInsights(full);
+    renderDecisions(full);
+    FilterEngine.renderChips();
+  }catch(e){
+    console.error(e);
+    Utils.toast('⚠️ Error procesando: '+Utils.esc(e.message),'err');
+  }
 }
 
 /* ================= PDFEngine ================= */
